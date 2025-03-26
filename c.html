@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <p id="i1"></p> 
+        <script>
+            var a,b,c;//Number, String, Boolean
+            a=0;
+            document.write(a+"  "+typeof(a)+"<br><br>");
+            b=String(a);
+            document.write(b + "  " + typeof (b) + "<br><br>");//30 -> "30"
+            c = Boolean(a);
+            document.write(c + "  " + typeof (c) + "<br>******************<br>");
+
+            a = "30";
+            document.write(a + "  " + typeof (a) + "<br><br>");
+            b = Number(a);
+            document.write(b + "  " + typeof (b) + "<br><br>");
+            c = Boolean(a);
+            document.write(c + "  " + typeof (c) + "<br>******************<br>");
+
+            a = false;
+            document.write(a + "  " + typeof (a) + "<br><br>");
+            b = String(a);
+            document.write(b + "  " + typeof (b) + "<br><br>");
+            c = Number(a);
+            document.write(c + "  " + typeof (c) + "<br>******************<br>");
+        </script>
+    </body>
+</html>
