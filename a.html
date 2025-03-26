@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <p id="i1"></p>
+        <p id="i2"></p>
+        <p id="i3"></p>
+        <p id="i4"></p>
+        <p id="i5"></p>
+        <script>
+            class student{
+                constructor(n,y){//called automatically, on object creation
+                    this.name=n;//this : current object
+                    this.year=y;
+                }
+                age(){
+                    let d=new Date();//current date
+                    return d.getFullYear()-this.year;//2025-2013
+                }
+            }
+            s1=new student('Priyank',2013);//object created
+            document.getElementById("i1").innerHTML="My name is"+s1.name+". I born in "+s1.year+". And my age is"+s1.age();
+            s2 = new student('Pranav',2013);
+            document.getElementById("i2").innerHTML = "My name is" + s2.name + ". I born in " + s2.year + ". And my age is" + s2.age();
+            s3 = new student('Durga',2012);
+            document.getElementById("i3").innerHTML = "My name is" + s3.name + ". I born in " + s3.year + ". And my age is" + s3.age();
+        </script>
+    </body>
+</html>
